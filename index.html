@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,403 @@
     <!-- custom css link -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    
+
+    <div class="wrapper">
+
+        <!-- header start -->
+        <header class="header">
+            <div class="container">
+                <div class="logo-left">
+                    <h1 class="main-logo"><a href="index.html">medium</a></h1>
+                    <div class="search-part">
+                        <input class="search-input" type="search" placeholder="Search">
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 101 101" id="search">
+                            <path
+                                d="M63.3 59.9c3.8-4.6 6.2-10.5 6.2-17 0-14.6-11.9-26.5-26.5-26.5S16.5 28.3 16.5 42.9 28.4 69.4 43 69.4c6.4 0 12.4-2.3 17-6.2l20.6 20.6c.5.5 1.1.7 1.7.7.6 0 1.2-.2 1.7-.7.9-.9.9-2.5 0-3.4L63.3 59.9zm-20.4 4.7c-12 0-21.7-9.7-21.7-21.7s9.7-21.7 21.7-21.7 21.7 9.7 21.7 21.7-9.7 21.7-21.7 21.7z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="logo-right">
+                    <button class="login-btn">Login</button>
+                    <div class="post">
+                        <img src="./images/icons/post-icon.png" alt="post-icon">
+                        <p>Write</p>
+                    </div>
+                    <div class="notification">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="38"
+                            viewBox="0 0 50 50">
+                            <path
+                                d="M 25 0 C 22.800781 0 21 1.800781 21 4 C 21 4.515625 21.101563 5.015625 21.28125 5.46875 C 15.65625 6.929688 12 11.816406 12 18 C 12 25.832031 10.078125 29.398438 8.25 31.40625 C 7.335938 32.410156 6.433594 33.019531 5.65625 33.59375 C 5.265625 33.878906 4.910156 34.164063 4.59375 34.53125 C 4.277344 34.898438 4 35.421875 4 36 C 4 37.375 4.84375 38.542969 6.03125 39.3125 C 7.21875 40.082031 8.777344 40.578125 10.65625 40.96875 C 13.09375 41.472656 16.101563 41.738281 19.40625 41.875 C 19.15625 42.539063 19 43.253906 19 44 C 19 47.300781 21.699219 50 25 50 C 28.300781 50 31 47.300781 31 44 C 31 43.25 30.847656 42.535156 30.59375 41.875 C 33.898438 41.738281 36.90625 41.472656 39.34375 40.96875 C 41.222656 40.578125 42.78125 40.082031 43.96875 39.3125 C 45.15625 38.542969 46 37.375 46 36 C 46 35.421875 45.722656 34.898438 45.40625 34.53125 C 45.089844 34.164063 44.734375 33.878906 44.34375 33.59375 C 43.566406 33.019531 42.664063 32.410156 41.75 31.40625 C 39.921875 29.398438 38 25.832031 38 18 C 38 11.820313 34.335938 6.9375 28.71875 5.46875 C 28.898438 5.015625 29 4.515625 29 4 C 29 1.800781 27.199219 0 25 0 Z M 25 2 C 26.117188 2 27 2.882813 27 4 C 27 5.117188 26.117188 6 25 6 C 23.882813 6 23 5.117188 23 4 C 23 2.882813 23.882813 2 25 2 Z M 27.34375 7.1875 C 32.675781 8.136719 36 12.257813 36 18 C 36 26.167969 38.078125 30.363281 40.25 32.75 C 41.335938 33.941406 42.433594 34.6875 43.15625 35.21875 C 43.515625 35.484375 43.785156 35.707031 43.90625 35.84375 C 44.027344 35.980469 44 35.96875 44 36 C 44 36.625 43.710938 37.082031 42.875 37.625 C 42.039063 38.167969 40.679688 38.671875 38.9375 39.03125 C 35.453125 39.753906 30.492188 40 25 40 C 19.507813 40 14.546875 39.753906 11.0625 39.03125 C 9.320313 38.671875 7.960938 38.167969 7.125 37.625 C 6.289063 37.082031 6 36.625 6 36 C 6 35.96875 5.972656 35.980469 6.09375 35.84375 C 6.214844 35.707031 6.484375 35.484375 6.84375 35.21875 C 7.566406 34.6875 8.664063 33.941406 9.75 32.75 C 11.921875 30.363281 14 26.167969 14 18 C 14 12.261719 17.328125 8.171875 22.65625 7.21875 C 23.320313 7.707031 24.121094 8 25 8 C 25.886719 8 26.679688 7.683594 27.34375 7.1875 Z M 21.5625 41.9375 C 22.683594 41.960938 23.824219 42 25 42 C 26.175781 42 27.316406 41.960938 28.4375 41.9375 C 28.792969 42.539063 29 43.25 29 44 C 29 46.222656 27.222656 48 25 48 C 22.777344 48 21 46.222656 21 44 C 21 43.242188 21.199219 42.539063 21.5625 41.9375 Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="user">
+                        <img src="./images/icons/user-logo.png" alt="user">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
+
+        <!-- blogs section start -->
+        <section class="blogs">
+            <div class="container">
+                <article class="left-blog">
+                    <div class="tab">
+                        <a class="active" href="#" class="tab-link">For you</a>
+                        <a href="#" class="tab-link">Following</a>
+                    </div>
+                    <div class="left-blogs">
+                        <div class="blog">
+                            <div class="author">
+                                <img src="./images/icons/channel-1.svg" alt="author">
+                                <h3 class="blog-author">David Lee</h3>
+                            </div>
+                            <div class="card-info">
+                                <div class="card-content">
+                                    <h2 class="card-content__title">What Would You Do to Feel Alive?</h2>
+                                    <h4 class="card-content__subtitle">We all choose our cages. Mine just happens to be
+                                        freedom.</h4>
+                                    <div class="card-statistics">
+                                        <div class="date">
+                                            <img src="./images/icons/date-icon.png" alt="date">
+                                            <span>Oct 30, 2024</span>
+                                        </div>
+                                        <div class="likes">
+                                            <img src="./images/icons/like-icon.png" alt="like">
+                                            <span>429</span>
+                                        </div>
+                                        <div class="commments">
+                                            <img src="./images/icons/comment.svg" alt="comment">
+                                            <span>6</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-content__img">
+                                    <img src="https://images.unsplash.com/photo-1735437629103-0fac198c7c2e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="card-content__img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog">
+                            <div class="author">
+                                <img src="./images/icons/channel-2.svg" alt="author">
+                                <h3 class="blog-author">David Lee</h3>
+                            </div>
+                            <div class="card-info">
+                                <div class="card-content">
+                                    <h2 class="card-content__title">What Would You Do to Feel Alive?</h2>
+                                    <h4 class="card-content__subtitle">We all choose our cages. Mine just happens to be
+                                        freedom.</h4>
+                                    <div class="card-statistics">
+                                        <div class="date">
+                                            <img src="./images/icons/date-icon.png" alt="date">
+                                            <span>Oct 30, 2024</span>
+                                        </div>
+                                        <div class="likes">
+                                            <img src="./images/icons/like-icon.png" alt="like">
+                                            <span>429</span>
+                                        </div>
+                                        <div class="commments">
+                                            <img src="./images/icons/comment.svg" alt="comment">
+                                            <span>6</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-content__img">
+                                    <img src="https://images.unsplash.com/photo-1735437629103-0fac198c7c2e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="card-content__img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog">
+                            <div class="author">
+                                <img src="./images/icons/channel-3.svg" alt="author">
+                                <h3 class="blog-author">David Lee</h3>
+                            </div>
+                            <div class="card-info">
+                                <div class="card-content">
+                                    <h2 class="card-content__title">What Would You Do to Feel Alive?</h2>
+                                    <h4 class="card-content__subtitle">We all choose our cages. Mine just happens to be
+                                        freedom.</h4>
+                                    <div class="card-statistics">
+                                        <div class="date">
+                                            <img src="./images/icons/date-icon.png" alt="date">
+                                            <span>Oct 30, 2024</span>
+                                        </div>
+                                        <div class="likes">
+                                            <img src="./images/icons/like-icon.png" alt="like">
+                                            <span>429</span>
+                                        </div>
+                                        <div class="commments">
+                                            <img src="./images/icons/comment.svg" alt="comment">
+                                            <span>6</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-content__img">
+                                    <img src="https://images.unsplash.com/photo-1735437629103-0fac198c7c2e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="card-content__img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog">
+                            <div class="author">
+                                <img src="./images/icons/channel-1.svg" alt="author">
+                                <h3 class="blog-author">David Lee</h3>
+                            </div>
+                            <div class="card-info">
+                                <div class="card-content">
+                                    <h2 class="card-content__title">What Would You Do to Feel Alive?</h2>
+                                    <h4 class="card-content__subtitle">We all choose our cages. Mine just happens to be
+                                        freedom.</h4>
+                                    <div class="card-statistics">
+                                        <div class="date">
+                                            <img src="./images/icons/date-icon.png" alt="date">
+                                            <span>Oct 30, 2024</span>
+                                        </div>
+                                        <div class="likes">
+                                            <img src="./images/icons/like-icon.png" alt="like">
+                                            <span>429</span>
+                                        </div>
+                                        <div class="commments">
+                                            <img src="./images/icons/comment.svg" alt="comment">
+                                            <span>6</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-content__img">
+                                    <img src="https://images.unsplash.com/photo-1735437629103-0fac198c7c2e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="card-content__img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog">
+                            <div class="author">
+                                <img src="./images/icons/channel-2.svg" alt="author">
+                                <h3 class="blog-author">David Lee</h3>
+                            </div>
+                            <div class="card-info">
+                                <div class="card-content">
+                                    <h2 class="card-content__title">What Would You Do to Feel Alive?</h2>
+                                    <h4 class="card-content__subtitle">We all choose our cages. Mine just happens to be
+                                        freedom.</h4>
+                                    <div class="card-statistics">
+                                        <div class="date">
+                                            <img src="./images/icons/date-icon.png" alt="date">
+                                            <span>Oct 30, 2024</span>
+                                        </div>
+                                        <div class="likes">
+                                            <img src="./images/icons/like-icon.png" alt="like">
+                                            <span>429</span>
+                                        </div>
+                                        <div class="commments">
+                                            <img src="./images/icons/comment.svg" alt="comment">
+                                            <span>6</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-content__img">
+                                    <img src="https://images.unsplash.com/photo-1735437629103-0fac198c7c2e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="card-content__img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog">
+                            <div class="author">
+                                <img src="./images/icons/channel-3.svg" alt="author">
+                                <h3 class="blog-author">David Lee</h3>
+                            </div>
+                            <div class="card-info">
+                                <div class="card-content">
+                                    <h2 class="card-content__title">What Would You Do to Feel Alive?</h2>
+                                    <h4 class="card-content__subtitle">We all choose our cages. Mine just happens to be
+                                        freedom.</h4>
+                                    <div class="card-statistics">
+                                        <div class="date">
+                                            <img src="./images/icons/date-icon.png" alt="date">
+                                            <span>Oct 30, 2024</span>
+                                        </div>
+                                        <div class="likes">
+                                            <img src="./images/icons/like-icon.png" alt="like">
+                                            <span>429</span>
+                                        </div>
+                                        <div class="commments">
+                                            <img src="./images/icons/comment.svg" alt="comment">
+                                            <span>6</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-content__img">
+                                    <img src="https://images.unsplash.com/photo-1735437629103-0fac198c7c2e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="card-content__img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <div class="sidebar right-blog">
+                    <h3 class="interesting-posts">Interesting posts</h3>
+                    <div class="posts">
+                        <div class="post">
+                            <div class="post-author">
+                                <img src="https://plus.unsplash.com/premium_photo-1689551670902-19b441a6afde?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="post-author">
+                                <span class="post-author__name">Elisa Gabbert</span>
+                            </div>
+                            <h3 class="post-title">Every book I read in 2024, with commentary</h3>
+                            <h4 class="date"><span>1d ago</span></h4>
+                        </div>
+                        <div class="post">
+                            <div class="post-author">
+                                <img src="https://plus.unsplash.com/premium_photo-1689977968861-9c91dbb16049?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="post-author">
+                                <span class="post-author__name">Dwayne Jons</span>
+                            </div>
+                            <h3 class="post-title">Every book I read in 2024, with commentary</h3>
+                            <h4 class="date"><span>1d ago</span></h4>
+                        </div>
+                        <div class="post">
+                            <div class="post-author">
+                                <img src="https://media.istockphoto.com/id/1770666963/photo/portrait-of-handsome-caucasian-man-looking-at-laptop-working-online-from-his-home.jpg?s=2048x2048&w=is&k=20&c=a7X0c-ehfSBj5gkn2sOj5ashcVR9WjtgdvEnmZWtfGE="
+                                    alt="post-author">
+                                <span class="post-author__name">Albert Coral</span>
+                            </div>
+                            <h3 class="post-title">Every book I read in 2024, with commentary</h3>
+                            <h4 class="date"><span>1d ago</span></h4>
+                        </div>
+                        <button class="full-list" href="#!">See the full list</button>
+                        <div class="more-posts">
+                            <div class="post">
+                                <div class="post-author">
+                                    <img src="https://plus.unsplash.com/premium_photo-1689551670902-19b441a6afde?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="post-author">
+                                    <span class="post-author__name">Elisa Gabbert</span>
+                                </div>
+                                <h3 class="post-title">Every book I read in 2024, with commentary</h3>
+                                <h4 class="date"><span>1d ago</span></h4>
+                            </div>
+                            <div class="post">
+                                <div class="post-author">
+                                    <img src="https://plus.unsplash.com/premium_photo-1689977968861-9c91dbb16049?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="post-author">
+                                    <span class="post-author__name">Dwayne Jons</span>
+                                </div>
+                                <h3 class="post-title">Every book I read in 2024, with commentary</h3>
+                                <h4 class="date"><span>1d ago</span></h4>
+                            </div>
+                            <div class="post">
+                                <div class="post-author">
+                                    <img src="https://media.istockphoto.com/id/1770666963/photo/portrait-of-handsome-caucasian-man-looking-at-laptop-working-online-from-his-home.jpg?s=2048x2048&w=is&k=20&c=a7X0c-ehfSBj5gkn2sOj5ashcVR9WjtgdvEnmZWtfGE="
+                                        alt="post-author">
+                                    <span class="post-author__name">Albert Coral</span>
+                                </div>
+                                <h3 class="post-title">Every book I read in 2024, with commentary</h3>
+                                <h4 class="date"><span>1d ago</span></h4>
+                            </div>
+                            <div class="post">
+                                <div class="post-author">
+                                    <img src="https://plus.unsplash.com/premium_photo-1689551670902-19b441a6afde?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="post-author">
+                                    <span class="post-author__name">Elisa Gabbert</span>
+                                </div>
+                                <h3 class="post-title">Every book I read in 2024, with commentary</h3>
+                                <h4 class="date"><span>1d ago</span></h4>
+                            </div>
+                            <div class="post">
+                                <div class="post-author">
+                                    <img src="https://plus.unsplash.com/premium_photo-1689977968861-9c91dbb16049?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="post-author">
+                                    <span class="post-author__name">Dwayne Jons</span>
+                                </div>
+                                <h3 class="post-title">Every book I read in 2024, with commentary</h3>
+                                <h4 class="date"><span>1d ago</span></h4>
+                            </div>
+                            <div class="post">
+                                <div class="post-author">
+                                    <img src="https://media.istockphoto.com/id/1770666963/photo/portrait-of-handsome-caucasian-man-looking-at-laptop-working-online-from-his-home.jpg?s=2048x2048&w=is&k=20&c=a7X0c-ehfSBj5gkn2sOj5ashcVR9WjtgdvEnmZWtfGE="
+                                        alt="post-author">
+                                    <span class="post-author__name">Albert Coral</span>
+                                </div>
+                                <h3 class="post-title">Every book I read in 2024, with commentary</h3>
+                                <h4 class="date"><span>1d ago</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-post">
+                        <button class="filter">Programming</button>
+                        <button class="filter">selft imporovement</button>
+                        <button class="filter">data science</button>
+                        <button class="filter">writing</button>
+                        <button class="filter">technology</button>
+                        <button class="filter">relationships</button>
+                        <button class="filter">politics</button>
+                    </div>
+                    <div class="follow">
+                        <h3 class="follow-title">Who to follow</h3>
+                        <div class="recomend-follows">
+                            <div class="recomend-follow">
+                                <img width="30" height="30"
+                                    src="https://plus.unsplash.com/premium_photo-1689551670902-19b441a6afde?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="follow-img">
+                                <div class="recomend-follow__info">
+                                    <h2 class="follow-name">Elisa Gabbert</h2>
+                                    <p class="follow-job">Author of Kill It with Fire</p>
+                                    <p class="follow-desc">I Made $200 Writing For Less Than 20 Minutes Every Day This
+                                        Month (How You) </p>
+                                </div>
+                                <button class="following">Follow</button>
+                            </div>
+                            <div class="recomend-follow">
+                                <img width="30" height="30"
+                                    src="https://plus.unsplash.com/premium_photo-1689551670902-19b441a6afde?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="follow-img">
+                                <div class="recomend-follow__info">
+                                    <h2 class="follow-name">Elisa Gabbert</h2>
+                                    <p class="follow-job">Author of Kill It with Fire</p>
+                                    <p class="follow-desc">I Made $200 Writing For Less Than 20 Minutes Every Day This
+                                        Month (How You) </p>
+                                </div>
+                                <button class="following">Follow</button>
+                            </div>
+                            <div class="recomend-follow">
+                                <img width="30" height="30"
+                                    src="https://plus.unsplash.com/premium_photo-1689551670902-19b441a6afde?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="follow-img">
+                                <div class="recomend-follow__info">
+                                    <h2 class="follow-name">Elisa Gabbert</h2>
+                                    <p class="follow-job">Author of Kill It with Fire</p>
+                                    <p class="follow-desc">I Made $200 Writing For Less Than 20 Minutes Every Day This
+                                        Month (How You) </p>
+                                </div>
+                                <button class="following">Follow</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- blogs section end -->
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <button class="close-button">×</button>
+            <div class="modal-header">Login</div>
+            <form id="loginForm">
+                <input class="name" type="text" name="name" placeholder="Ismingizni kiriting" required>
+                <input class="email" type="email" name="email" placeholder="Emailni kiriting" required>
+                <button type="submit">Kirish</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
 </body>
+
 </html>

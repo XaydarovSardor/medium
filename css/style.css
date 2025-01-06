@@ -387,4 +387,437 @@ body {
   overflow: hidden;
 }
 
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+}
+
+input[type=search]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+.login-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-btn:hover {
+  background-color: #45a049;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.login-btn:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(72, 239, 136, 0.5);
+}
+
+.login-btn:active {
+  background-color: #3e8e41;
+  transform: scale(0.98);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-overlay.active {
+  display: flex;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  z-index: 1001;
+}
+
+.modal-header {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.modal input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.modal button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.modal button:hover {
+  background-color: #45a049;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: red;
+}
+
+.header {
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container .logo-left {
+  gap: 20px;
+  align-items: center;
+}
+.header .container .logo-left .search-part {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.header .container .logo-left .search-part .search-input {
+  padding: 10px 10px 10px 50px;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 20px;
+  color: #b7aeae;
+  font-size: 16px;
+  font-weight: 400;
+}
+.header .container .logo-left .search-part .search-input::placeholder {
+  color: #ccc;
+  font-size: 16px;
+  font-weight: 400;
+}
+.header .container .logo-left .search-part svg {
+  width: 30px;
+  position: absolute;
+  content: "";
+  cursor: pointer;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 25px;
+}
+.header .container .logo-left .search-part svg path {
+  fill: #666;
+}
+.header .container .logo-right {
+  gap: 40px;
+}
+.header .container .logo-right .notification svg {
+  cursor: pointer;
+}
+.header .container .logo-right .notification svg path {
+  fill: #666;
+}
+.header .container .logo-right .user {
+  height: 38px;
+}
+.header .container .logo-right .user img {
+  cursor: pointer;
+}
+.header .container .logo-right .post {
+  height: 38px;
+  display: none;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+}
+.header .container .logo-right .post.active {
+  display: flex;
+}
+.header .container .logo-right .post img {
+  height: 35px;
+  width: 30px;
+}
+.header .container .logo-right .post p {
+  color: #666;
+  font-size: 15px;
+  font-weight: 500;
+}
+.header .container div {
+  display: flex;
+}
+.header .container .main-logo a {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #000;
+}
+
+.blogs .container {
+  display: flex;
+}
+.blogs .container .blog {
+  border-bottom: 1px solid #ccc;
+  padding: 30px 0;
+  cursor: pointer;
+}
+.blogs .container .tab {
+  display: flex;
+  gap: 30px;
+  border-bottom: 1px solid #ccc;
+}
+.blogs .container .tab a {
+  font-size: 15px;
+  color: #6B6B6B;
+}
+.blogs .container .tab a.active {
+  color: #000;
+  border-bottom: 1px solid #000;
+  padding-bottom: 15px;
+}
+.blogs .container .tab a:hover {
+  color: #000;
+}
+.blogs .container .left-blog {
+  width: 60%;
+  padding-top: 50px;
+}
+.blogs .container .left-blog .author {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+}
+.blogs .container .left-blog .author img {
+  width: 30px;
+  border-radius: 5px;
+  height: 30px;
+}
+.blogs .container .card-info {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.blogs .container .card-info .card-content {
+  display: flex;
+  padding-top: 20px;
+  flex-direction: column;
+}
+.blogs .container .card-info .card-content__title {
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+}
+.blogs .container .card-info .card-content__subtitle {
+  color: #6B6B6B;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 7px;
+}
+.blogs .container .card-info .card-content__img img {
+  width: 170px;
+  height: 110px;
+  border-radius: 5px;
+}
+.blogs .container .card-info .card-statistics {
+  display: flex;
+  gap: 50px;
+  margin-top: 20px;
+}
+.blogs .container .card-info .card-statistics div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.blogs .container .card-info .card-statistics img {
+  height: 20px;
+  width: 20px;
+}
+.blogs .container .right-blog {
+  max-width: 353px;
+  width: 100%;
+  padding-left: 30px;
+  padding-top: 50px;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #ccc;
+}
+.blogs .container .right-blog .interesting-posts {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.blogs .container .right-blog .posts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 30px;
+}
+.blogs .container .right-blog .posts .full-list {
+  color: #6B6B6B;
+  padding: 0;
+  width: fit-content;
+  position: relative;
+}
+.blogs .container .right-blog .posts .full-list::after {
+  position: absolute;
+  content: "";
+  bottom: 2px;
+  display: none;
+  left: 0;
+  background: #6B6B6B;
+  width: 100%;
+  height: 1px;
+}
+.blogs .container .right-blog .posts .full-list:hover::after {
+  display: block;
+}
+.blogs .container .right-blog .posts .more-posts {
+  display: none;
+  flex-direction: column;
+  gap: 30px;
+}
+.blogs .container .right-blog .posts .more-posts.active {
+  display: flex;
+}
+.blogs .container .right-blog .posts .post {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 10px;
+}
+.blogs .container .right-blog .posts .post .post-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.blogs .container .right-blog .posts .post .post-author img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.blogs .container .right-blog .posts .post .post-author__name {
+  color: #222;
+  font-size: 16px;
+  font-weight: 400;
+}
+.blogs .container .right-blog .posts .post .date {
+  color: #6B6B6B;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}
+.blogs .container .right-blog .filter-post {
+  display: flex;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.blogs .container .right-blog .filter-post .filter {
+  width: fit-content;
+  color: #222;
+  background: #f2f2f2;
+  font-size: 14px;
+  padding: 10px 20px;
+  text-transform: capitalize;
+  border-radius: 20px;
+  font-weight: 500;
+}
+.blogs .container .right-blog .follow {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.blogs .container .right-blog .follow .follow-title {
+  font-weight: 600;
+  color: #333;
+  font-size: 20px;
+}
+.blogs .container .right-blog .follow .recomend-follows {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.blogs .container .right-blog .follow .recomend-follows .recomend-follow {
+  display: flex;
+  justify-content: space-between;
+}
+.blogs .container .right-blog .follow .recomend-follows .recomend-follow img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.blogs .container .right-blog .follow .recomend-follows .recomend-follow__info {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
+.blogs .container .right-blog .follow .recomend-follows .recomend-follow__info .follow-name {
+  font-size: 16px;
+  color: #222;
+  font-weight: 600;
+}
+.blogs .container .right-blog .follow .recomend-follows .recomend-follow__info .follow-job {
+  font-size: 14px;
+  color: #6B6B6B;
+}
+.blogs .container .right-blog .follow .recomend-follows .recomend-follow__info .follow-desc {
+  max-width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  color: #6B6B6B;
+}
+.blogs .container .right-blog .follow .recomend-follows .recomend-follow .following {
+  font-size: 14px;
+  color: #222;
+  font-weight: 500;
+  border: 1px solid #222;
+  border-radius: 20px;
+  height: fit-content;
+  padding: 5px 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
